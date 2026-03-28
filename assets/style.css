@@ -12,22 +12,23 @@
   --color-muted:      #b8c8bf;
   --color-light:      #fceb98;
 }
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-
-
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  background-color: var(--color-background)
-}
 
 .btnavbar {
   background-color: var(--color-background)!important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0 !important;
+  font-family: 'Merriweather', serif !important;
+  font-size: 1.25rem !important;
+}
+.btnavbar .nav-link {
+  color: var(--color-accent) !important;
+}
+.nav-link:hover {
+  color: var(--color-secondary) !important;
+  font-size: 1.3rem !important;
 }
 
 .navbar-logo img {
@@ -44,6 +45,7 @@
   position: relative !important;
   text-decoration: none !important;
   overflow: hidden !important;
+  transition: transform 0.3s ease !important;
 }
 
 .nav-link::after {
@@ -56,6 +58,8 @@
   background-color: currentColor !important;
   transition: width 0.3s ease !important;
 }
+
+
 
 .nav-link:hover::after {
   width: 100% !important;
