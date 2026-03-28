@@ -1,13 +1,33 @@
+/*Global styles for the application */
+
+/*Color palette */
+:root {
+  --color-primary:    #d4ce84;
+  --color-secondary:  #194724;
+  --color-tertiary:   #798f57;
+  --color-quaternary: #6f907d;
+  --color-background: #ebefed;
+  --color-accent:     #3d6741;  
+  --color-highlight:  #aab170;
+  --color-muted:      #b8c8bf;
+  --color-light:      #fceb98;
+}
+
+
+
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #f8f9fa;
+  padding: 0rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: var(--color-muted)
 }
 
 .navbar-logo img {
-  height: 200px;
+  height: 100px;
   width: auto;
   object-fit: contain;
 }
