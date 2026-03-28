@@ -39,3 +39,25 @@
 .nav {
   margin-bottom: 0;
 }
+
+.nav-link {
+  position: relative !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+}
+
+.nav-link::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background-color: currentColor !important;
+  transition: width 0.3s ease !important;
+}
+
+.nav-link:hover::after {
+  width: 100% !important;
+}
+
