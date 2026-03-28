@@ -23,7 +23,11 @@
   padding: 0rem;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
-  background-color: var(--color-muted)
+  background-color: var(--color-background)
+}
+
+.btnavbar {
+  background-color: var(--color-background)!important;
 }
 
 .navbar-logo img {
