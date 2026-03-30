@@ -13,8 +13,7 @@
   --color-light:      #fceb98;
 }
 /*Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Passions+Conflict&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 .btnavbar {
   background-color: var(--color-background)!important;
@@ -37,8 +36,8 @@
   object-fit: contain;
 }
 .navbar-brand {
-  font-family: 'Source Sans 3', sans-serif !important;
-  font-size: 1.3rem !important;
+  font-family: 'Passions Conflict', cursive !important;
+  font-size: 1.5rem !important;
   color: #20592e !important;
   padding-left: 16rem !important;
 }
