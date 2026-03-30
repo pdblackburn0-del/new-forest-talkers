@@ -39,7 +39,7 @@
 .navbar-brand {
   font-family: 'Source Sans 3', sans-serif !important;
   font-size: 1.3rem !important;
-  color: #20592e; !important;
+  color: #20592e !important;
   padding-left: 16rem !important;
 }
 .nav {
@@ -151,16 +151,25 @@
   left: 50%;
   transform: translate(-50%, -50%) translateX(100px); /* start slightly right */
   font-size: 0.9rem;
-  background-color: white;
+  background-color: lightyellow;
   padding: 20px;
-  margin-top: 70px;
-  margin-left: 160px;
-  border-radius: 10px;
-  max-width: 400px;
+  margin-left: 200px;
+  max-width: 500px;
   z-index: 2;
   border: 1px solid var(--color-light);
   opacity: 0;
   animation: slideInRight 2s ease-out forwards;
+}
+
+.hero-text button {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 #services {
@@ -206,21 +215,26 @@
     display: none !important; /* hide brand on mobile */
   }
   .hero-image {
-    justify-content: ;  /* center on small screens */
+    justify-content: center;  /* center on small screens */
     padding-left: 0; 
     padding-right: 200px;        /* remove left padding */
   }
   .hero-image img {
-    width: 200px;              /* smaller size for mobile */
-    height: 350px;            /* keep equal for perfect circle */  
+    width: 150px;              /* smaller size for mobile */
+    height: 250px;
+    margin-right: 40px;            /* keep equal for perfect circle */  
 }
   .hero-text {       
-    margin-left: 50px;
-    margin-top: 100px;           /* remove left margin */
+    margin-left: 100px;
+    margin-top: 0px;           /* remove left margin */
     padding: 15px;            /* smaller padding */
-    width: 300px;
-    font-size: 0.9rem;         /* allow more width on mobile */
+    width: 250px;
+    font-size: 0.8rem;         /* allow more width on mobile */
   }
+  .hero-text button {
+    padding: 8px 8px; /* smaller button on mobile */
+    font-size: 0.9rem;
+  } 
   .working-imgs img{
     width: 120px;
     height: 120px;
