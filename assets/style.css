@@ -214,7 +214,59 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;  
 }
+#testimonials {
+  background-color: var(--color-background);
+  padding: 2rem;
+}
+#testimonials h2 {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 1.5rem !important;
+  color: var(--color-secondary);
+  margin-top: 1rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Carousel size + centering */
+#carouselExampleInterval {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+/* Slide container */
+.testimonial-slide {
+  padding: 20px;
+}
+
+/* Images */
+.testimonial-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Text */
+.testimonial-slide p {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+.testimonial-slide p img {
+  width: 100px;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Controls visibility tweak */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* makes arrows visible on light images */
+}
 /* animation keyframes */
 @keyframes slideIn {
   to {
