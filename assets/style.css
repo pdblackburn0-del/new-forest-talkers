@@ -12,8 +12,6 @@
   --color-muted:      #b8c8bf;
   --color-light:      #fceb98;
 }
-/*Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Passions+Conflict&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 .btnavbar {
   background-color: var(--color-background)!important;
@@ -31,15 +29,16 @@
 }
 
 .navbar-logo img {
-  height: 100px;
+  height: 120px;
   width: auto;
   object-fit: contain;
+  margin-bottom: 10px;
 }
-.navbar-brand {
-  font-family: 'Passions Conflict', cursive !important;
+.btnavbar .navbar-brand h1 {
+  font-family: 'The Girl Next Door', cursive !important;
   font-size: 1.5rem !important;
   color: #20592e !important;
-  padding-left: 16rem !important;
+  padding-left: 11rem !important;
 }
 .nav {
   margin-bottom: 0;
@@ -87,6 +86,12 @@
   align-items: center;
 }
 
+.hero-title2 {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 1.8rem !important;
+  color: var(--color-secondary) !important;
+  margin-bottom: 0.5rem !important;
+}
 
 
 .working-imgs {
@@ -261,7 +266,11 @@
 
 /* Slide container */
 .testimonial-slide {
+  position: relative;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Images */
@@ -275,16 +284,14 @@
 /* Text */
 .testimonial-slide p {
   margin-top: 15px;
-  font-style: italic;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-secondary);
+  text-align: center;
 }
 .testimonial-slide p img {
   width: 100px;
   height: auto; 
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -677,10 +684,10 @@
 .contact-header {
   display: flex;
   align-items: flex-start;   /* vertically aligns them */
-  gap: 3rem;             /* space between logo and text */ /* optional: center horizontally */
+  gap: 1rem;             /* space between logo and text */ /* optional: center horizontally */
 }
 .contact-logo {
-  width: 130px;   /* smaller looks better inline */
+  width: 150px;   /* smaller looks better inline */
   height: auto;
 }
 
