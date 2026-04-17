@@ -111,7 +111,6 @@
 
 .hero {
   font-family: 'Source Sans 3', sans-serif !important;
-  font-size: 1rem !important;
   color: var(--color-secondary);
   display: flex;
   flex-direction: row;
@@ -154,7 +153,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateX(100px); /* start slightly right */
-  font-size: 0.9rem;
+  font-size: 1rem;
   background-color: lightyellow;
   padding: 20px;
   margin-left: 200px;
@@ -332,7 +331,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar-logo img {
-    height: 80px; /* smaller logo for mobile */
+    height: 70px; /* smaller logo for mobile */
   }
   .navbar-brand {
     font-size: 0.875rem !important;
