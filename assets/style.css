@@ -239,6 +239,23 @@
   flex-direction: column;
   align-items: center;   /* centers image + text horizontally */
   text-align: center;    /* ensures text itself is centered */
+  text-decoration: none !important;
+  color: var(--color-accent) !important;
+  transition: all 0.3s ease;
+}
+
+.expertise-item:hover {
+  transform: translateY(-5px);
+}
+
+.expertise-item p {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 .expertise-images img:hover {
   transform: scale(1.05);
