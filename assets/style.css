@@ -340,10 +340,7 @@
 .hero-title2 {
   font-size: 1.1rem !important; /* smaller title on mobile */
 }
-  .hero {
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   .hero-image {
     padding-left: 0;
@@ -351,11 +348,7 @@
   }
 
   .hero-text {
-    position: static; /* KEY FIX */
-    transform: none;
-    margin: 1rem 0 0 0;
-    width: 90%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .hero-image img {
