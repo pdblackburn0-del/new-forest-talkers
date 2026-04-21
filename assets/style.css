@@ -77,7 +77,6 @@
 }
 .certificates a {
   display: inline-block;
-  margin-right: 20px;
 }
 .images {
   font-family: 'Source Sans 3', sans-serif !important;
@@ -114,76 +113,60 @@
 }
 
 .hero {
-  font-family: 'Source Sans 3', sans-serif !important;
-  color: var(--color-secondary);
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 2rem;
+  align-items: center;        /* vertical alignment */
+  justify-content: center;    /* center on screen */
+  gap: 1rem;                  /* space between image + text */
+  padding: 3rem 1rem;
   background-color: var(--color-background);
+  font-family: 'Source Sans 3', sans-serif;
 }
 
-
-.hero-image {
-  display: flex;
-  justify-content: flex-start;  /* move to left */
-  align-items: center;          /* vertically center */
-  overflow: hidden;
-  padding-left: 450px;
-}
-
+/* Image */
 .hero-image img {
-  width: 190px;              /* adjust size */
-  height: auto;             /* keep equal for perfect circle */
-  object-fit: cover;         /* crops image nicely */
-  border-radius: 0%;        /* makes it round */
-  border: 3px solid var(--color-light); /* optional border */
-    position: relative;
-  z-index: 1;
-
-  /* animation setup */
-  transform: translateX(-100%);
-  opacity: 0;
-  animation: slideIn 2s ease-out forwards;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid var(--color-light);
+  animation: slideInLeft 3s ease-out forwards;
 }
 
-.hero-row {
-  position: relative;
-}
-
+/* Text box */
 .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateX(100px); /* start slightly right */
-  font-size: 1rem;
+  max-width: 300px;
+  font-size: 0.9rem;
   background-color: lightyellow;
   padding: 20px;
-  margin-left: 200px;
-  max-width: 500px;
-  z-index: 2;
   border: 1px solid var(--color-light);
-  opacity: 0;
+  text-align: center;
   animation: slideInRight 2s ease-out forwards;
 }
 
-.hero-text button {
-  background-color: var(--color-accent);
-  color: var(--color-background);
-  border: none;
-  padding: 10px 10px;
-  border-radius: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10px;
+/* Hero animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.hero-text button:hover {
-  background-color: var(--color-secondary);
-  transition: background-color 0.3s ease;
-  transform: scale(1.05);
-  
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
+
+
 
 .learn {
   display: inline-block;
@@ -333,23 +316,7 @@
 .carousel-control-next-icon {
   filter: invert(1); /* makes arrows visible on light images */
 }
-/* animation keyframes */
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slideInRight {
-  from {
-    transform: translate(-50%, -50%) translateX(300px); /* further right */
-    opacity: 1;
-  }
-  to {
-    transform: translate(-50%, -50%) translateX(0); /* final position */
-    opacity: 1;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .navbar-logo img {
     height: 50px; /* smaller logo for mobile */
@@ -361,7 +328,7 @@
   }
 
   .certificates img{
-  height: 50px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   margin-left: 20px;
@@ -373,21 +340,34 @@
 .hero-title2 {
   font-size: 1.1rem !important; /* smaller title on mobile */
 }
-  .hero-image img {
-    width: 140px;              /* smaller size for mobile */
-    height: 250px;          /* keep equal for perfect circle */  
-}
-  .hero-text {       
-    margin-left: 100px;
-    margin-top: 10px;           /* remove left margin */
-    padding: 15px;            /* smaller padding */
-    width: 220px;
-    font-size: 0.7rem;         /* allow more width on mobile */
+  .hero {
+    flex-direction: column;
+    align-items: center;
   }
-  .hero-text button {
-    padding: 8px 8px; /* smaller button on mobile */
+
+  .hero-image {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .hero-text {
+    position: static; /* KEY FIX */
+    transform: none;
+    margin: 1rem 0 0 0;
+    width: 90%;
     font-size: 0.9rem;
-  } 
+  }
+
+  .hero-image img {
+    width: 140px;
+    height: auto;
+    
+  }
+  .learn {
+    padding: 8px 8px; /* smaller button on mobile */
+    font-size: 0.8rem;
+  }
+
   .working-imgs img{
     width: 100px;
     height: 100px;
