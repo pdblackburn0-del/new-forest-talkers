@@ -37,7 +37,7 @@
 .btnavbar .navbar-brand h1 {
   font-family: 'The Girl Next Door', cursive !important;
   font-size: 1.5rem !important;
-  color: #20592e !important;
+  color: var(--color-tertiary) !important;
   padding-left: 11rem !important;
 }
 .nav {
@@ -507,6 +507,12 @@
   font-size: 1rem;
   color: var(--color-accent);
 }
+.footer-section2 {
+  text-align: center;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 1.5rem;
+  color: var(--color-tertiary);
+}
 
 .footer-link {
   color: var(--color-accent) !important;
@@ -516,25 +522,7 @@
   transition: transform 0.3s ease !important;
 }
 
-.footer-link::after {
-  content: '' !important;
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: 0 !important;
-  height: 2px !important;
-  background-color: currentColor !important;
-  transition: width 0.3s ease !important;
-}
 
-.footer-link:hover {
-  transform: scale(1.2) !important;
-  color: var(--color-secondary) !important;
-}
-
-.footer-link:hover::after {
-  width: 100% !important;
-}
 
 
 .about-quals {
@@ -895,9 +883,32 @@
     max-width: 100%;
     gap: 0.5rem;
   }
+  #contact form {
+    padding: 1.2rem;   /* ↓ less inner space */
+    gap: 0.75rem;      /* ↓ reduce spacing between fields */
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 0.5rem;   /* ↓ smaller fields */
+    font-size: 0.9rem;
+  }
+
+  #contact textarea {
+    min-height: 80px;  /* ↓ shorter textarea */
+  }
+
+  #contact button {
+    padding: 0.6rem 1.2rem;  /* ↓ smaller button */
+    font-size: 1rem;
+  }
+
+  #contact label {
+    gap: 0.25rem;  /* ↓ tighter label spacing */
+  }
 
   #map {
-    padding-right: 2.4rem;
+    padding-right: 3rem;
     width: 90vw;
   }
 
@@ -908,5 +919,9 @@
 
   #map h3 {
     text-align: center;
+  }
+
+  .footer-section2 {
+    font-size: 1.2rem;
   }
 }
