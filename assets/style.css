@@ -740,13 +740,104 @@
   font-weight: 600;
 }
 
+/* =========================
+   TABLET / MEDIUM SCREENS
+========================= */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-logo img {
+    height: 80px; /* smaller logo for mobile */
+  }
+  .navbar-brand {
+    font-size: 0.2rem !important;
+    padding-left: 0rem !important;
+    display: none; /* hide brand on mobile */
+  }
+  .working-imgs img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+    margin-top: 20px;
+  }
+    .expertise-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: stretch;
+    }
+
+  .expertise-images img {
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .expertise-item p {
+    font-size: 1rem;
+  }
+     .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-description h3 {
+    font-size: 0.9rem;
+  }
+  #contact label {
+    font-size: 0.9rem;
+  }
+  .contact-logo {
+    width: 120px;
+  }
+  #contact form {
+    width: 100%;
+    max-width: 100%;
+    gap: 0.5rem;
+  }
+  #contact form {
+    padding: 1.2rem;   /* ↓ less inner space */
+    gap: 0.75rem;      /* ↓ reduce spacing between fields */
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 0.5rem;   /* ↓ smaller fields */
+    font-size: 0.9rem;
+  }
+
+  #contact textarea {
+    min-height: 80px;  /* ↓ shorter textarea */
+  }
+
+  #contact button {
+    padding: 0.6rem 1.2rem;  /* ↓ smaller button */
+    font-size: 1rem;
+  }
+
+  #contact label {
+    gap: 0.25rem;  /* ↓ tighter label spacing */
+  }
+
+  #map {
+    width: 90vw;
+  }
+
+  #map iframe {
+    height: 400px;
+  }
+
+  #map h3 {
+    text-align: center;
+  }
+
+
+}
+
 /*mobile media query at bottom of file */
 @media screen and (max-width: 768px) {
   .navbar-logo img {
     height: 50px; /* smaller logo for mobile */
   }
   .navbar-brand {
-    font-size: 0.875rem !important;
     padding-left: 0rem !important;
     display: none !important; /* hide brand on mobile */
   }
